@@ -1,5 +1,6 @@
 import { createClient } from 'contentful'
 import ServicesCard from '../components/ServicesCard'
+import styles from '../styles/Home.module.scss'
 
 export async function getStaticProps() {
 	const client = createClient({
@@ -17,7 +18,7 @@ export async function getStaticProps() {
 }
 
 export default function Servicio({ servicio }) {
-	console.log(servicio)
+	/* 	console.log(servicio) */
 
 	return (
 		<div>
@@ -289,131 +290,7 @@ export default function Servicio({ servicio }) {
 					))}
 				</div>
 			} */}
-			<style jsx>{`
-				.container {
-					display: flex;
-					max-width: 960px;
-					margin: 0 auto;
-				}
-
-				.navbar {
-					display: flex;
-					justify-content: center;
-					padding: 0.5rem 1rem;
-					background: blue;
-				}
-
-				.navbar__wrapper {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					width: 100%;
-				}
-
-				.btn-primary {
-					padding: 8px 24px;
-					border-radius: 12px;
-					border-width: 0;
-					background: #8fe;
-				}
-
-				.hero {
-					display: flex;
-					min-height: 480px;
-					align-items: stretch;
-				}
-
-				.hero h1 {
-					font-size: 48px;
-				}
-
-				.fd-col {
-					flex-direction: column;
-				}
-
-				.ai-start {
-					align-items: start;
-				}
-
-				.jc-center {
-					justify-content: center;
-				}
-
-				.about-me {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-				}
-
-				.c-50 {
-					width: 50%;
-				}
-
-				.proyectos {
-					display: flex;
-					justify-content: center;
-				}
-
-				.proyectos__grid {
-					display: grid;
-					grid-template-columns: 1fr 1fr 1fr 1fr;
-					column-gap: 20px;
-				}
-
-				.proyecto {
-					background: red !important;
-					min-height: 350px;
-				}
-
-				.c-25 {
-					width: 100%;
-				}
-
-				.proceso {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-
-				.proceso__wrapper {
-					display: flex;
-					flex-direction: column;
-					align-items: start;
-					max-width: 960px;
-				}
-
-				.proceso__step {
-					display: flex;
-				}
-
-				.proceso__step__data {
-					display: flex;
-				}
-
-				.grid-soluciones {
-					display: grid;
-					grid-template-columns: repeat(2, 1fr);
-					column-gap: 20px;
-				}
-
-				.solucion__aditional-features {
-					display: grid;
-					grid-template: 1fr / 1fr 1fr 1fr 1fr;
-				}
-
-				.grid-clientes {
-					display: grid;
-					grid-template: auto / 1fr 1fr 1fr 1fr;
-				}
-				.form-style {
-					display: flex;
-					flex-direction: column;
-				}
-
-				.my-l {
-					padding: 80px 0;
-				}
-			`}</style>
+			<style jsx>{``}</style>
 		</div>
 	)
 }
