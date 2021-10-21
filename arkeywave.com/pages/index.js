@@ -96,10 +96,10 @@ export default function Servicio({ servicio }) {
 					</p>
 					<div className="proceso__step">
 						<div className="proceso__step__data c-50">
-							<div>
+							<div className="p__s__d__number">
 								<h3>01</h3>
 							</div>
-							<div>
+							<div className="p__s__d__text">
 								<h3>Descubrimiento</h3>
 								<p>
 									Haz crecer tu empresa más rápido e inteligentemente con la
@@ -114,10 +114,10 @@ export default function Servicio({ servicio }) {
 					</div>
 					<div className="proceso__step">
 						<div className="proceso__step__data c-50">
-							<div>
+							<div className="p__s__d__number">
 								<h3>02</h3>
 							</div>
-							<div>
+							<div className="p__s__d__text">
 								<h3>Estrategia + planificación</h3>
 								<p>
 									Haz crecer tu empresa más rápido e inteligentemente con la
@@ -132,10 +132,10 @@ export default function Servicio({ servicio }) {
 					</div>
 					<div className="proceso__step">
 						<div className="proceso__step__data c-50">
-							<div>
+							<div className="p__s__d__number">
 								<h3>03</h3>
 							</div>
-							<div>
+							<div className="p__s__d__text">
 								<h3>Diseño + Desarrollo</h3>
 								<p>
 									Haz crecer tu empresa más rápido e inteligentemente con la
@@ -150,10 +150,10 @@ export default function Servicio({ servicio }) {
 					</div>
 					<div className="proceso__step">
 						<div className="proceso__step__data c-50">
-							<div>
+							<div className="p__s__d__number">
 								<h3>04</h3>
 							</div>
-							<div>
+							<div className="p__s__d__text">
 								<h3>Capacitación y lanzamiento</h3>
 								<p>
 									Haz crecer tu empresa más rápido e inteligentemente con la
@@ -169,7 +169,7 @@ export default function Servicio({ servicio }) {
 				</div>
 			</div>
 			<div className="soluciones my-l">
-				<div className="container fd-col ai-start">
+				<div className="container fd-col">
 					<h2>Soluciones a la medida</h2>
 					<p>
 						Construir un sitio web puede ser más simple de lo que parece cuando
@@ -187,12 +187,18 @@ export default function Servicio({ servicio }) {
 								</li>
 							</ul>
 							<div className="solucion__features">
-								<div className="solucion__features__time">
+								<div className="solucion__features__time c-50">
 									<img src="static/favicon-32x32.png" alt="" />
 									<div className="time__data">
+										<p>De</p>
+										<h4>2 a 6 semanas</h4>
+									</div>
+								</div>
+								<div className="solucion__features__price c-50">
+									<img src="static/favicon-32x32.png" alt="" />
+									<div className="price__data">
 										<p>Desde</p>
 										<h4>US$ 1200.00</h4>
-										<p>dólares</p>
 									</div>
 								</div>
 							</div>
