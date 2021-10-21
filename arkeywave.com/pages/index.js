@@ -32,7 +32,7 @@ export default function Servicio({ servicio }) {
 				</div>
 			</div>
 			<div className="hero">
-				<div className="hero__wrapper">
+				<div className="container fd-col ai-start jc-center">
 					<h1>Transforma tu sitio web en una máquina de marketing</h1>
 					<p>
 						Haz crecer tu empresa más rápido e inteligentemente con la ayuda de
@@ -42,8 +42,8 @@ export default function Servicio({ servicio }) {
 					<button className="btn-primary">Descubre cómo</button>
 				</div>
 			</div>
-			<div className="about-me">
-				<div className="about-me__wrapper">
+			<div className="about-me my-l">
+				<div className="container">
 					<div className="c-50">
 						<img src="static/favicon-32x32.png" alt="No olvides cambiarlo!" />
 					</div>
@@ -67,8 +67,8 @@ export default function Servicio({ servicio }) {
 					</div>
 				</div>
 			</div>
-			<div className="proyectos">
-				<div className="proyectos__wrapper">
+			<div className="proyectos my-l">
+				<div className="container fd-col">
 					<h2>Últimos Proyectos</h2>
 					<p>
 						Haz crecer tu empresa más rápido e inteligentemente con la ayuda de
@@ -83,8 +83,8 @@ export default function Servicio({ servicio }) {
 					</div>
 				</div>
 			</div>
-			<div className="proceso">
-				<div className="proceso__wrapper">
+			<div className="proceso my-l">
+				<div className="container fd-col">
 					<h2>
 						Cómo te ayudaré a construir un sitio web que genere resultados
 					</h2>
@@ -167,8 +167,8 @@ export default function Servicio({ servicio }) {
 					</div>
 				</div>
 			</div>
-			<div className="soluciones">
-				<div className="soluciones__wrapper">
+			<div className="soluciones my-l">
+				<div className="container fd-col ai-start">
 					<h2>Soluciones a la medida</h2>
 					<p>
 						Construir un sitio web puede ser más simple de lo que parece cuando
@@ -240,8 +240,8 @@ export default function Servicio({ servicio }) {
 					</div>
 				</div>
 			</div>
-			<div className="clientes">
-				<div className="clientes__wrapper">
+			<div className="clientes my-l">
+				<div className="container fd-col">
 					<h2>Clientes</h2>
 					<p>
 						Estas son algunas de las organizaciones que confiaron en mi y hoy
@@ -265,8 +265,8 @@ export default function Servicio({ servicio }) {
 					</div>
 				</div>
 			</div>
-			<div className="conversemos">
-				<div className="conversemos__wrapper">
+			<div className="conversemos my-l">
+				<div className="container fd-col">
 					<h2>Conversemos</h2>
 					<p>¿Listo para iniciar un proyecto?</p>
 					<form>
@@ -282,14 +282,20 @@ export default function Servicio({ servicio }) {
 					</form>
 				</div>
 			</div>
-			{
+			{/* 			{
 				<div className="lista-de-servicios">
 					{servicio.map((servicios) => (
 						<ServicesCard key={servicios.sys.id} servicios={servicios} />
 					))}
 				</div>
-			}
+			} */}
 			<style jsx>{`
+				.container {
+					display: flex;
+					max-width: 960px;
+					margin: 0 auto;
+				}
+
 				.navbar {
 					display: flex;
 					justify-content: center;
@@ -313,32 +319,30 @@ export default function Servicio({ servicio }) {
 
 				.hero {
 					display: flex;
-					min-height: 380px;
-					align-items: center;
-					justify-content: center;
+					min-height: 480px;
+					align-items: stretch;
 				}
 
 				.hero h1 {
 					font-size: 48px;
 				}
 
-				.hero__wrapper {
-					display: flex;
+				.fd-col {
 					flex-direction: column;
+				}
+
+				.ai-start {
 					align-items: start;
-					max-width: 960px;
+				}
+
+				.jc-center {
+					justify-content: center;
 				}
 
 				.about-me {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-				}
-
-				.about-me__wrapper {
-					display: flex;
-					align-items: start;
-					max-width: 960px;
 				}
 
 				.c-50 {
@@ -348,12 +352,6 @@ export default function Servicio({ servicio }) {
 				.proyectos {
 					display: flex;
 					justify-content: center;
-				}
-
-				.proyectos__wrapper {
-					display: flex;
-					flex-direction: column;
-					max-width: 960px;
 				}
 
 				.proyectos__grid {
@@ -392,9 +390,28 @@ export default function Servicio({ servicio }) {
 					display: flex;
 				}
 
+				.grid-soluciones {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					column-gap: 20px;
+				}
+
+				.solucion__aditional-features {
+					display: grid;
+					grid-template: 1fr / 1fr 1fr 1fr 1fr;
+				}
+
+				.grid-clientes {
+					display: grid;
+					grid-template: auto / 1fr 1fr 1fr 1fr;
+				}
 				.form-style {
 					display: flex;
 					flex-direction: column;
+				}
+
+				.my-l {
+					padding: 80px 0;
 				}
 			`}</style>
 		</div>
