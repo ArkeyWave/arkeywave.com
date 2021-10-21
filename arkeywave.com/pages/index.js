@@ -173,19 +173,24 @@ export default function Servicio({ servicio }) {
 					<h2>Soluciones a la medida</h2>
 					<p>
 						Construir un sitio web puede ser más simple de lo que parece cuando
+						<br />
 						tenemos claro el objetivo por el que trabajamos.
 					</p>
 					<div className="grid-soluciones">
 						<div className="solucion">
-							<h3>Diseño web express</h3>
-							<p>Para:</p>
-							<ul>
-								<li>Startups y emprendimientos validando su idea de negocio</li>
-								<li>
-									Empresas establecidas que buscan dar un paso rápido y seguro
-									al mundo digital
-								</li>
-							</ul>
+							<div className="solucion__head">
+								<h3>Diseño web express</h3>
+								<p>Para:</p>
+								<ul>
+									<li>
+										Startups y emprendimientos validando su idea de negocio
+									</li>
+									<li>
+										Empresas establecidas que buscan dar un paso rápido y seguro
+										al mundo digital
+									</li>
+								</ul>
+							</div>
 							<div className="solucion__features">
 								<div className="solucion__features__time c-50">
 									<img src="static/favicon-32x32.png" alt="" />
@@ -198,51 +203,63 @@ export default function Servicio({ servicio }) {
 									<img src="static/favicon-32x32.png" alt="" />
 									<div className="price__data">
 										<p>Desde</p>
-										<h4>US$ 1200.00</h4>
+										<h4>US$ 300.00</h4>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="solucion">
-							<h3>Diseño web personalizado</h3>
-							<p>Para:</p>
-							<ul>
-								<li>Startups y emprendimientos validando su idea de negocio</li>
-								<li>
-									Empresas establecidas que buscan dar un paso rápido y seguro
-									al mundo digital
-								</li>
-							</ul>
+							<div className="solucion__head">
+								<h3>Diseño web personalizado</h3>
+								<p>Para:</p>
+								<ul>
+									<li>
+										Startups y emprendimientos validando su idea de negocio
+									</li>
+									<li>
+										Empresas establecidas que buscan dar un paso rápido y seguro
+										al mundo digital
+									</li>
+								</ul>
+							</div>
 							<div className="solucion__features">
-								<div className="solucion__features__time">
+								<div className="solucion__features__time c-50">
 									<img src="static/favicon-32x32.png" alt="" />
 									<div className="time__data">
+										<p>De</p>
+										<h4>1 a 3 meses</h4>
+									</div>
+								</div>
+								<div className="solucion__features__price c-50">
+									<img src="static/favicon-32x32.png" alt="" />
+									<div className="price__data">
 										<p>Desde</p>
 										<h4>US$ 1200.00</h4>
-										<p>dólares</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<button className="btn-primary">Conversemos</button>
-					<h2>Todas mis soluciones incluyen</h2>
-					<div className="solucion__aditional-features">
-						<div className="aditional-feature">
-							<img src="static/favicon-32x32.png" alt="Cambiame!" />
-							<p>Dominio a elección por un año</p>
-						</div>
-						<div className="aditional-feature">
-							<img src="static/favicon-32x32.png" alt="Cambiame!" />
-							<p>Dominio a elección por un año</p>
-						</div>
-						<div className="aditional-feature">
-							<img src="static/favicon-32x32.png" alt="Cambiame!" />
-							<p>Dominio a elección por un año</p>
-						</div>
-						<div className="aditional-feature">
-							<img src="static/favicon-32x32.png" alt="Cambiame!" />
-							<p>Dominio a elección por un año</p>
+					<button className="btn-primary as-cen">Conversemos</button>
+					<div className="aditional-features">
+						<h2>Todas mis soluciones incluyen</h2>
+						<div className="solucion__aditional-features">
+							<div className="aditional-feature">
+								<img src="static/favicon-32x32.png" alt="Cambiame!" />
+								<p>Dominio a elección por un año</p>
+							</div>
+							<div className="aditional-feature">
+								<img src="static/favicon-32x32.png" alt="Cambiame!" />
+								<p>Alojamiento web por un año</p>
+							</div>
+							<div className="aditional-feature">
+								<img src="static/favicon-32x32.png" alt="Cambiame!" />
+								<p>Certificado SSL por un año</p>
+							</div>
+							<div className="aditional-feature">
+								<img src="static/favicon-32x32.png" alt="Cambiame!" />
+								<p>Capacitación pre-lanzamiento</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -254,8 +271,9 @@ export default function Servicio({ servicio }) {
 						Estas son algunas de las organizaciones que confiaron en mi y hoy
 						cuentan con un sitio web que les ayuda a conectar con su audiencia y
 						generar más ventas.
+						<br />
+						¡Muchas gracias!
 					</p>
-					<p>¡Muchas gracias!</p>
 					<div className="grid-clientes">
 						<img src="static/favicon-32x32.png" alt="Cambiame!" />
 						<img src="static/favicon-32x32.png" alt="Cambiame!" />
@@ -276,17 +294,64 @@ export default function Servicio({ servicio }) {
 				<div className="container fd-col">
 					<h2>Conversemos</h2>
 					<p>¿Listo para iniciar un proyecto?</p>
-					<form>
+					<form className="formulario">
 						<div className="form-style">
-							<input type="text" name="first_name" placeholder="Nombre" />
-							<input type="text" name="first_name" placeholder="Apellidos" />
-							<input type="text" name="first_name" placeholder="Email" />
-							<input type="text" name="first_name" placeholder="Whatsapp" />
-							<button type="submit" href="/">
-								Enviar
+							<input
+								className="input"
+								type="text"
+								name="first_name"
+								placeholder="Tu nombre"
+							/>
+							<input
+								className="input"
+								type="text"
+								name="last_name"
+								placeholder="Tus apellidos"
+							/>
+							<input
+								className="input"
+								type="text"
+								name="email"
+								placeholder="Tu correo de negocio"
+							/>
+							<input
+								className="input"
+								type="text"
+								name="phone"
+								placeholder="Tu Whatsapp o Celular"
+							/>
+							<div className="form-pick">
+								<span>Selecciona el tipo de diseño que necesitas:</span>
+								<button className="form-service-pick">Express</button>
+								<button className="form-service-pick">Personalizado</button>
+							</div>
+							<textarea
+								className="input"
+								name="desafio"
+								placeholder="¿Cómo te puedo ayudar?"
+								rows="5"
+							/>
+							<button className="btn-primary as-cen" type="submit" href="/">
+								Conversemos
 							</button>
 						</div>
 					</form>
+				</div>
+			</div>
+			<div className="footer-minimal">
+				<div className="container">
+					<p>Arkeywave.com 2021 © Todos los derechos reservados</p>
+					<div className="social-links">
+						<a href="">
+							<img src="/static/favicon-32x32.png" alt="Cambiame!" />
+						</a>
+						<a href="">
+							<img src="/static/favicon-32x32.png" alt="Cambiame!" />
+						</a>
+						<a href="">
+							<img src="/static/favicon-32x32.png" alt="Cambiame!" />
+						</a>
+					</div>
 				</div>
 			</div>
 			{/* 			{
@@ -296,7 +361,6 @@ export default function Servicio({ servicio }) {
 					))}
 				</div>
 			} */}
-			<style jsx>{``}</style>
 		</div>
 	)
 }
